@@ -134,3 +134,5 @@ UpgradeLog*.XML
 /src/.vs/EDT.Blazor.Sample/DesignTimeBuild/.dtbcache.v2
 /src/.vs/EDT.Blazor.Sample/v17/.futdcache.v2
 /.vs/ElasticAppDemo/FileContentIndex/*.vsidx
+/.vs/ElasticAppDemo/DesignTimeBuild/.dtbcache.v2
+/.vs/ElasticAppDemo/config/applicationhost.config

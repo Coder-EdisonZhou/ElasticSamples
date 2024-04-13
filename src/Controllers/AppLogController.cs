@@ -35,8 +35,9 @@ public class AppLogController : ControllerBase
 	}
 
 	[HttpPut]
-	public async Task<IActionResult> UpdateAsync([FromBody] AppLog log)
+	public async Task<IActionResult> UpdateAsync([Required] string id, [FromBody] AppLog log)
 	{
+		log.Id = id;
 		await _appLogRepository.UpdateAsync(log);
 		return Ok("Success");
 	}
