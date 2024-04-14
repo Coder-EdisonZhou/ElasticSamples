@@ -3,7 +3,8 @@
 public interface IElasticRepositoryBase<T> where T : ElasticModelBase
 {
     Task AddAsync(T item);
-    Task UpdateAsync(T item);
+    Task AddManyAsync(T[] items);
+	Task UpdateAsync(T item);
     Task DeleteAsync(string id);
     Task<Tuple<int, IList<T>>> QueryAsync(int page, int limit);
 }

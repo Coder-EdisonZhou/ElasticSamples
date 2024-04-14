@@ -19,6 +19,11 @@ public abstract class ElasticRepositoryBase<T> : IElasticRepositoryBase<T> where
 		await this.Client.IndexAsync(item, x => x.Index(this.IndexName));
 	}
 
+	public virtual async Task AddManyAsync(T[] items)
+	{
+		await this.Client.IndexManyAsync(items, this.IndexName);
+	}
+
 	public virtual async Task DeleteAsync(string id)
 	{
 		await this.Client.DeleteAsync<T>(id, x => x.Index(this.IndexName));

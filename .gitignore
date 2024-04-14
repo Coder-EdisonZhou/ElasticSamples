@@ -136,3 +136,6 @@ UpgradeLog*.XML
 /.vs/ElasticAppDemo/FileContentIndex/*.vsidx
 /.vs/ElasticAppDemo/DesignTimeBuild/.dtbcache.v2
 /.vs/ElasticAppDemo/config/applicationhost.config
+/.vs/ElasticAppDemo/v17/.futdcache.v2
+/.vs/ProjectEvaluation/elasticappdemo.metadata.v7.bin
+/.vs/ProjectEvaluation/elasticappdemo.projects.v7.bin

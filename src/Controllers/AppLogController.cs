@@ -20,6 +20,9 @@ public class AppLogController : ControllerBase
 	public async Task<IActionResult> QueryAsync(int page = 1, int limit = 10)
 	{
 		var result = await _appLogRepository.QueryAsync(page, limit);
+		if (result.Item1 <= 0 || !result.Item2.Any())
+			return NotFound();
+
 		return Ok(new 
 		{
 			total = result.Item1,
